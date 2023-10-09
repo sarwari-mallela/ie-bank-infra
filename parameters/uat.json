@@ -1,0 +1,27 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "environmentType": {
+            "value": "prod"
+        },
+        "postgreSQLServerName": {
+            "value": "sarwari-dbsrv-uat"
+        },
+        "postgreSQLDatabaseName": {
+            "value": "sarwari-db-uat"
+        },
+        "appServicePlanName": {
+            "value": "sarwari-asp-uat"
+        },
+        "appServiceAPIAppName": {
+            "value": "sarwari-be-uat"
+        },
+        "appServiceAppName": {
+            "value": "sarwari-fe-uat"
+        },
+        "location": {
+            "value": "UK West"
+        }
+    }
+}
