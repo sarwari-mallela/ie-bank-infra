@@ -4,7 +4,10 @@ on: [push, workflow_dispatch]
 
 env:
   RESOURCE_GROUP_DEV: aguadamillas_students_1
+  RESOURCE_GROUP_UAT: aguadamillas_students_1
   SUBSCRIPTION_ID_DEV: e0b9cada-61bc-4b5a-bd7a-52c606726b3b
+  SUBSCRIPTION_ID_UAT: e0b9cada-61bc-4b5a-bd7a-52c606726b3b
+
   USER_ALIAS: sarwari
 jobs:
   build:
@@ -70,15 +73,15 @@ jobs:
           
     steps:
           
-                # Checkout code
+    # Checkout code
     - uses: actions/checkout@main
               
-                # Log into Azure
+    # Log into Azure
     - uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
           
-                # Deploy Bicep file
+    # Deploy Bicep file
     - name: deploy
       uses: azure/arm-deploy@v1
       with:
