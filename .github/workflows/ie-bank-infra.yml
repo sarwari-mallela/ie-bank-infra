@@ -57,7 +57,7 @@ jobs:
         deploymentName: ${{env.USER_ALIAS}}
 
   deploy-uat:
-    if: github.ref == 'refs/heads/uat'
+#   if: github.ref == 'refs/heads/uat'
     runs-on: ubuntu-latest
     needs: [build,deploy-dev]
     environment:
