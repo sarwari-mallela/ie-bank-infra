@@ -106,4 +106,15 @@ module appService 'modules/app-service.bicep' = {
   ]
 }
 
+//resource appInsights 'Microsoft.Insights/components@2022-02-01-preview' = {
+//name: 'yourAppInsightsName' // Specify a unique name
+//location: location
+//kind: 'web'
+//properties: {
+ // ApplicationId: 'yourAppInsightsAppId' // Specify your Application Insights AppId
+ // Request_Source: 'IbizaAIExtension'
+ // SamplingPercentage: 100
+//}
+//}
+
 output appServiceAppHostName string = appService.outputs.appServiceAppHostName

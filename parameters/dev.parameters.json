@@ -20,8 +20,14 @@
         "appServiceAppName": {
             "value": "sarwari-fe-dev"
         },
+        "azureMonitorName": {
+            "value": "sarwari-am-dev"
+        },
+        "appInsightsName": {
+            "value": "sarwari-ai-dev"
+        },
         "location": {
-            "value": "UK West"
+            "value": "Finland Central"
         }
     }
 }
