@@ -20,12 +20,12 @@
         "appServiceAppName": {
             "value": "sarwari-fe-dev"
         },
-        //"azureMonitorName": {
-        //    "value": "sarwari-am-dev"
-        //},
-        //"appInsightsName": {
-        //    "value": "sarwari-ai-dev"
-        //},
+        "azureMonitorName": {
+            "value": "sarwari-am-dev"
+        },
+        "appInsightsName": {
+            "value": "sarwari-ai-dev"
+        },
         "location": {
             "value": "West US"
         }
